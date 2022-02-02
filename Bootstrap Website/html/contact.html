@@ -2,82 +2,78 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Own  Style Sheet-->
-    <link rel="stylesheet" href="/BootcampTeamExcercise/Bootstrap Website/CSS/style.css">
+  <!-- Own  Style Sheet-->
+  <link rel="stylesheet" href="/BootcampTeamExcercise/Bootstrap Website/CSS/style.css">
 
-    <!-- Title for Home Page -->
-    <title>Web Developer</title>
+  <!-- Title for Home Page -->
+  <title>Web Developer</title>
 </head>
 
 <body>
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">iCODER</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=about.html>About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Topics
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Services</a></li>
-                            <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Previous Clients</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <button class="btnLogin btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
-                <button type="button" class="btnSignup btn-danger data-bs-toggle=" modal" data-bs-target="#exampleModal"">SignUp</button>
-            </div>
-        </div>
-    </nav>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">iCODER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=about.html>About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Services</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Previous Clients</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button class="btnLogin btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+        <button type="button" class="btnSignup btn-danger" data-bs-toggle="modal"
+          data-bs-target="#signupModal">SignUp</button>
+      </div>
+    </div>
+  </nav>
 
- <!-- Form starts here -->
+  <!-- Form starts here -->
 
- <div class="container">
+  <div class="container">
     <div class="row">
       <div class="card d-flex justify-content-center mx-auto my-3 p-5">
         <h2>Contact Us</h2><br>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail">Enter your email address:</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              name="youremail"
-            />
+            <input type="email" class="form-control" id="inputEmail" name="youremail" />
             <div id="email_error" class="val_error"></div>
           </div><br>
           <div class="form-row">
@@ -93,93 +89,150 @@
 
             <!-- Check boxes -->
 
-        
+
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                <label class="form-check-label" for="flexCheckDefault">Are you a Member?</label>
-            </div>
-            
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                <label class="form-check-label" for="flexCheckDefault">Are you a Professor?</label>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">Are you a Member?</label>
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                <label class="form-check-label" for="flexCheckDefault">Are you a Coder?</label>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">Are you a Professor?</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">Are you a Coder?</label>
             </div><br>
 
-        <!-- Bottom forms -->
+            <!-- Bottom forms -->
 
-        <div class="form-group mt-0">
-          <label for="exampleFormControlTextarea1"
-            >Tell us about yourself:
-          </label>
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            name="yourmessage"
-          ></textarea>
-          <div id="message_error" class="val_error"></div>
-        </div><br>
+            <div class="form-group mt-0">
+              <label for="exampleFormControlTextarea1">Tell us about yourself:
+              </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="yourmessage"></textarea>
+              <div id="message_error" class="val_error"></div>
+            </div><br>
 
-        <div class="form-group mt-0">
-          <label for="exampleFormControlTextarea1"
-            >Elaborate your concern:
-          </label>
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            name="yourmessage"
-          ></textarea>
-          <div id="message_error" class="val_error"></div>
+            <div class="form-group mt-0">
+              <label for="exampleFormControlTextarea1">Elaborate your concern:
+              </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="yourmessage"></textarea>
+              <div id="message_error" class="val_error"></div>
+            </div>
+
+            <!-- Submit button -->
+
+            <div class="form-button pt-4">
+              <button type="submit" class="btn btn-primary btn-block btn-lg" value="Register" name="register">
+                <span>Submit</span>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Submit button -->
+      <!-- Login form -->
 
-        <div class="form-button pt-4">
-          <button
-            type="submit"
-            class="btn btn-primary btn-block btn-lg"
-            value="Register"
-            name="register"
-          >
-            <span>Submit</span>
-          </button>
+      <div id="loginModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login to iCoder</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                    anyone else.</small>
+                </div>
+                <div class="form-group mb-2">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End of login modal code-->
+
+    <!-- Sign up form -->
+
+    <div id="signupModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get an iCoder account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                  anyone else.</small>
+              </div>
+              <div class="form-group mb-2">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group mb-2">
+                <label for="exampleInputPassword1">Confirm password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Create account</button>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-            <!-- Footer -->
-            <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-                <div class="container text-left">
-                    <small>Copyright &copy; 2021-2022, iCODER, Inc. <a href="#">Terms</a> <a
-                            href="#">Privacy</a></small>
-                </div>
-                <!-- footer button -->
-                <div>
-                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-                </div>
-            </footer>
+    <!-- Footer -->
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+      <div class="container text-left">
+        <small>Copyright &copy; 2021-2022, iCODER, Inc. <a href="#">Terms</a> <a href="#">Privacy</a></small>
+      </div>
+      <!-- footer button -->
+      <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </div>
+    </footer>
 
 
-            <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-            <!-- Option 1: Bootstrap Bundle with Popper -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 
-            <!-- Option 2: Separate Popper and Bootstrap JS -->
-            <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
-            <script src="/BootcampTeamExcercise/Bootstrap Website/JS/function.js"></script>
+    <script src="/BootcampTeamExcercise/Bootstrap Website/JS/function.js"></script>
 
 </body>
 
